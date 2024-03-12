@@ -1,5 +1,5 @@
 {
-    "name": "persona/pop-it-mvc",
+    "name": "Persona-ity/pop-it-mvc",
     "description": "A powerful PHP MVC framework for building web applications with ease.",
     "type": "project",
     "license": "MIT",
@@ -12,5 +12,11 @@
     "minimum-stability": "dev",
     "require": {
         "php": "^7.4 | ^8.2"
+     },
+     "autoload": {
+         "psr-4": {
+             "Src\\": "core/Src/",
+             "": "app/"
+         }
      }
 }
