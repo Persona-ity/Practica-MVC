@@ -1,0 +1,16 @@
+{
+    "name": "persona/pop-it-mvc",
+    "description": "A powerful PHP MVC framework for building web applications with ease.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Persona-ity",
+            "email": "studyscience1955@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4 | ^8.2"
+     }
+}
