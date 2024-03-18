@@ -10,7 +10,7 @@
 <body>
 <header>
    <nav>
-       <a href="<?= app()->route->getUrl('/hello') ?>">Главная</a>
+       
        <?php
        if (!app()->auth::check()):
            ?>
@@ -20,6 +20,8 @@
        else:
            ?>
            <a href="<?= app()->route->getUrl('/logout') ?>">Выход (<?= app()->auth::user()->name ?>)</a>
+           <a href="<?= app()->route->getUrl('/hello') ?>">Формы для создания</a>
+           <a href="<?= app()->route->getUrl('/AttachSubscriber') ?>">Формы для создания</a>
        <?php
        endif;
        ?>

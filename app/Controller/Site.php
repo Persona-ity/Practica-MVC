@@ -21,10 +21,14 @@ class Site
    {
        return new View('site.hello', ['message' => 'hello working']);
    }
+   public function AttachSubscriber(): string
+   {
+       return new View('site.AttachSubscriber', ['message' => 'hello working']);
+   }
    public function signup(Request $request): string
     {
         if ($request->method === 'POST' && User::create($request->all())) {
-            app()->route->redirect('/go');
+            app()->route->redirect('/signup');
         }
     return new View('site.signup');
     }
