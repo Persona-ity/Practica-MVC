@@ -52,4 +52,18 @@ class Site
             app()->route->redirect('/hello');
         }
 
+        public function subdivition(): string
+        {
+            return new View('site.subdivition', ['message' => 'hello working']);
+        }
+
+        public function alltelephone(): string
+        {
+            return new View('site.alltelephone', ['message' => 'hello working']);
+        }
+
+         public function Countabonent(): string
+         {
+             return new View('site.Countabonent', ['message' => 'hello working']);
+         }
 }
